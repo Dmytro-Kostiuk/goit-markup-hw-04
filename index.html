@@ -15,9 +15,11 @@
     <header class="page-header">
       <div class="container flexbox">
         <nav class="navigation">
-          <a href="./" class="logo"
-            ><img src="./images/logo/logo.svg" alt="Логотип"
-          /></a>
+          <a href="./" class="logo">
+            <svg width="145" height="31">
+              <use href="./images/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
 
           <ul class="list menu-list">
             <li class="list-item">
@@ -55,6 +57,11 @@
           <h2 class="section-title" hidden>Описание работы</h2>
           <ul class="list list-work">
             <li class="desc-of-work-item">
+              <div class="icon-item-bg">
+                <svg width="65.32" height="70" class="icon-align">
+                  <use href="./images/icons/sprite.svg#antenna"></use>
+                </svg>
+              </div>
               <h3 class="icon-title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
@@ -62,6 +69,11 @@
               </p>
             </li>
             <li class="desc-of-work-item">
+              <div class="icon-item-bg">
+                <svg class="icon-align" width="66.96" height="70">
+                  <use href="./images/icons/sprite.svg#clock"></use>
+                </svg>
+              </div>
               <h3 class="icon-title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения
@@ -69,6 +81,11 @@
               </p>
             </li>
             <li class="desc-of-work-item">
+              <div class="icon-item-bg">
+                <svg class="icon-align" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#diagram"></use>
+                </svg>
+              </div>
               <h3 class="icon-title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной
@@ -76,6 +93,11 @@
               </p>
             </li>
             <li class="desc-of-work-item">
+              <div class="icon-item-bg">
+                <svg class="icon-align" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#astronaut"></use>
+                </svg>
+              </div>
               <h3 class="icon-title">Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
@@ -134,14 +156,19 @@
               />
               <h3 class="title-h3">Игорь Демьяненко</h3>
               <p lang="en">Product Designer</p>
-              <ul class="list">
+              <ul class="list menu-list">
                 <li>
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="ссылка Инстаграм"
-                  ></a>
+                    class="icon-link"
+                  >
+                    <svg class="icon-img" width="20" height="20">
+                      <use href="./images/icons/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -149,7 +176,12 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="ссылка Твиттер"
-                  ></a>
+                    class="icon-link"
+                  >
+                    <svg class="icon-img" width="20" height="20">
+                      <use href="./images/icons/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -157,7 +189,12 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="ссылка Фейсбук"
-                  ></a>
+                    class="icon-link"
+                  >
+                    <svg class="icon-img" width="20" height="20">
+                      <use href="./images/icons/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -165,7 +202,12 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="ссылка Линкедин"
-                  ></a>
+                    class="icon-link"
+                  >
+                    <svg class="icon-img" width="20" height="20">
+                      <use href="./images/icons/linkedin.svg"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -270,7 +312,8 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="ссылка Инстаграм"
-                  ></a>
+                  >
+                  </a>
                 </li>
                 <li>
                   <a
@@ -304,12 +347,26 @@
       <section>
         <div class="container section-padding">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <a href="#"><img src="#" alt="" /></a>
-          <a href="#"><img src="#" alt="" /></a>
-          <a href="#"><img src="#" alt="" /></a>
-          <a href="#"><img src="#" alt="" /></a>
-          <a href="#"><img src="#" alt="" /></a>
-          <a href="#"><img src="#" alt="" /></a>
+          <ul class="list">
+            <li>
+              <a href="#"><img src="#" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="" /></a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
