@@ -211,8 +211,6 @@ h4 {
 .section-padding {
   padding-top: 94px;
   padding-bottom: 94px;
-  box-shadow: 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .pad {
@@ -285,6 +283,8 @@ h4 {
   background: var(--white-color);
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .item-team-list:nth-child(4n) {
@@ -394,6 +394,11 @@ h4 {
   margin-bottom: 30px;
 }
 
+.item-portfolio:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .item-portfolio > a {
   margin: 0;
   padding: 0;
@@ -401,10 +406,6 @@ h4 {
 .item-portfolio:nth-child(3n) {
   margin-right: 0;
 }
-
-/*.d-block {
-  display: block;
-}*/
 
 img {
   display: block;
