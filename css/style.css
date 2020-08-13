@@ -4,6 +4,8 @@
   --dark-color: #212121;
   --white-color: #ffffff;
   --bg-btn-color: #f5f4fa;
+  --icon-link-color: #afb1b8;
+  --black: #000;
 }
 
 * {
@@ -41,6 +43,7 @@ body {
 
 .page-header {
   padding: 24px 0 25px 0;
+  border: 1px solid #ececec;
 }
 
 .navigation {
@@ -81,6 +84,7 @@ body {
 .contacts:hover,
 .contacts:focus {
   color: var(--hover-color);
+  --general-color: #2196f3;
 }
 
 .active {
@@ -89,10 +93,16 @@ body {
 
 .contacts {
   color: var(--general-color);
+  display: inline-flex;
+  align-items: center;
 }
 
 .contacts:not(:last-child) {
   margin-right: 30px;
+}
+
+.contacts-icon {
+  margin-right: 10px;
 }
 
 .page-title {
@@ -191,6 +201,17 @@ h4 {
   flex-wrap: wrap;
 }
 
+.icon-link-list {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-top: 16px;
+}
+
+.icon-link-list > li:not(:last-child) {
+  margin-right: 10px;
+}
+
 .icon-link {
   display: inline-flex;
   justify-content: center;
@@ -200,11 +221,16 @@ h4 {
   border-radius: 50%;
   background-color: var(--white-color);
 }
-.icon-link:hover {
+.icon-img {
+  fill: var(--icon-link-color);
+}
+.icon-link:hover,
+.icon-link:focus {
   background-color: var(--hover-color);
 }
 
-.icon-link:hover .icon-img {
+.icon-link:hover .icon-img,
+.icon-link:focus .icon-img {
   fill: var(--white-color);
 }
 
@@ -293,7 +319,6 @@ h4 {
 .item-team-list > p {
   padding: 0;
   margin: 0;
-  padding-bottom: 24px;
   display: flex;
   justify-content: center;
 }
@@ -346,11 +371,53 @@ h4 {
   padding-top: 30px;
   padding-bottom: 10px;
 }
+.list-nav-icon {
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.nav-icon-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-link-color);
+  border-radius: 4px;
+}
+.nav-icon-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-icon-item:hover {
+  --icon-link-color: #2196f3;
+}
 
 .foot-nav {
   padding-top: 60px;
-  padding-bottom: 60px;
   margin-right: 69px;
+}
+.foot-icon-list {
+  margin-top: 20px;
+  padding-bottom: 100px;
+}
+
+.icon-foot-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.icon-foot-img {
+  fill: var(--white-color);
+}
+.icon-foot-link:hover,
+.icon-foot-link:focus {
+  background-color: var(--hover-color);
 }
 
 .foot-color {
@@ -359,7 +426,21 @@ h4 {
 
 .logo-foot {
   margin-top: 20px;
+  padding-bottom: 60px;
 }
+
+.logotype {
+  --black: #fff;
+  margin: 0;
+  padding: 0;
+}
+.dostalo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .address-item {
   margin-bottom: 9px;
 }
@@ -377,7 +458,9 @@ h4 {
   font-style: normal;
   text-decoration: none;
 }
-
+.join-to-us {
+  padding-top: 55px;
+}
 .join {
   color: var(--white-color);
 }
